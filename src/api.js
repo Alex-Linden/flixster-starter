@@ -41,7 +41,7 @@ class FlixsterAPI {
   // Individual API routes
 
   /** Get details on a company by handle. */
-  static async getNowPlaying(pageNumber) {
+  static async getNowPlaying(pageToLoad = 1) {
     let res = await this.request(`3/movie/now_playing?api_key=${FlixsterAPi.token}&language=en-US&page=${pageToLoad}`);
     return res.results;
   }

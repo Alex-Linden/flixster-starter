@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function MovieCard({ movie }) {
-    const { backdrop_path, title, vote_average } = movie;
+    const { poster_path, title, vote_average } = movie;
 
     return (
         <div className="movie-card">

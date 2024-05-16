@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import Headers from './Headers';
+import Header from './Header';
 import MovieGrid from './MovieGrid';
 
 
@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Headers />
+      <Header />
       <MovieGrid movies={movies} />
     </div>
   );
